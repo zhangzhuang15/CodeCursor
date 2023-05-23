@@ -74,7 +74,7 @@ pub async fn sign_in() {
     let challenge = base64_encode(sha256(verifier.clone()));
 
     let login_url = format!(
-        "https://cursor.so/loginDeepControl?challenge={challenge}&uuid={}&newbackend=true",
+        "https://cursor.sh/loginDeepControl?challenge={challenge}&uuid={}&newbackend=true",
         uuid.clone()
     );
 
